@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.prachiti.studentsfeedback.WelcomeDrawNavActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:title="sssssssssssssss"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_welcome_draw_nav" />
+
+    <Button
+        android:id="@+id/btnLower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEast"
+        android:layout_marginTop="63dp"
+        android:layout_toEndOf="@+id/btnWest"
+        android:layout_toRightOf="@+id/btnWest"
+        android:background="@drawable/button"
+        android:text="Boring"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnUpper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167dp"
+        android:background="@drawable/button"
+        android:text="Interesting"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnEast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnWest"
+        android:layout_alignBottom="@+id/btnWest"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/btnLower"
+        android:layout_toRightOf="@+id/btnLower"
+        android:background="@drawable/button"
+        android:text="Difficult"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnWest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpper"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="57dp"
+        android:layout_toLeftOf="@+id/btnUpper"
+        android:layout_toStartOf="@+id/btnUpper"
+        android:background="@drawable/button"
+        android:text="Easy"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnLower"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnLower"
+        android:layout_marginBottom="20dp"
+        android:text="Button" />
+
+
+</RelativeLayout>
